@@ -1,0 +1,170 @@
+.warp{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.warp-content{
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.concept{
+    position: relative;
+    float:left;
+    font-family: "Kanit", sans-serif;
+    color: rgb(133, 133, 133);
+
+    font-size: 25px;
+}
+
+.concept .char{
+    position: relative;
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-size: 210%;
+    animation: shine 2s infinite;
+}
+
+@font-face {
+    src: url("https://www.axis-praxis.org/fonts/webfonts/MetaVariableDemo-Set.woff2")
+      format("woff2");
+    font-family: "Meta";
+    font-style: normal;
+    font-weight: normal;
+}
+
+.hover, .word, h1 {
+  cursor: pointer;
+}
+
+.concept-one {
+    display: flex;
+    align-items: center;
+}
+
+.concept-one .word {
+    width: 240px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+.concept-one .word:hover .char:nth-child(1) {
+    margin: -30px 0 0 2px;
+    transform: rotate(-20deg);
+    color: #ffffffd0;
+}
+
+.concept-one .word:hover .char:nth-child(2) {
+    margin: -40px 0px 0 10px;
+    transform: rotate(5deg);
+    color: #ffffffd0;
+}
+
+.concept-one .word:hover .char:nth-child(3) {
+    margin: 15px 0 0 10px;
+    transform: rotate(12deg);
+    color: #ffffffd0;
+}
+
+.concept-one .word:hover .char:nth-child(4) {
+    margin: -25px 0 0;
+    transform: rotate(5deg);
+    color: #ffffffd0;
+}
+
+.concept-one .word:hover .char:nth-child(5) {
+    margin: -40px 5px 0;
+    transform: rotate(-10deg);
+    color: #ffffffd0;
+}
+
+.concept-one .word:hover .char:nth-child(6) {
+    color: #ffffffd0;
+}
+
+.concept-one .word:hover .char:nth-child(7) {
+    color: #ffffffd0;
+}
+
+.concept-one .char {
+    flex: 1;
+    transition: 0.3s ease-in-out;
+    position: relative;
+}
+
+@-webkit-keyframes shine {
+    from {
+      -webkit-mask-position: 150%;
+    }
+    
+    to {
+      -webkit-mask-position: -50%;
+    }
+}
+
+.menu li{
+    position: relative;
+    display: inline-block;
+    margin-right: 100px;
+}
+
+.menu li a{
+    font-family: "Oswald", sans-serif;
+    position: relative;
+    color: #888888;
+    text-decoration: none;
+    font-size: 20px;  
+}
+
+.menu a {
+    transition: color 0.2s linear 0s;
+}
+
+.menu a:hover {
+    color: #c2c2c2;
+}
+
+#blurry-filter {
+    margin:30px auto 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 70%;
+    height: 7.5rem;
+    background-color: rgba(133, 133, 133, 0.075);  
+    mask: linear-gradient(black 7rem,);
+    -webkit-mask: linear-gradient(black 7rem);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 25px;
+    border: solid rgba(58, 58, 58, 0.123);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#blurry-filter-2 {
+    margin:290px auto 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 40%;
+    height: 38rem;
+    background-color: rgba(133, 133, 133, 0.075);  
+    mask: linear-gradient(black 7rem,);
+    -webkit-mask: linear-gradient(black 7rem);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 25px;
+    border: solid rgba(58, 58, 58, 0.123);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
